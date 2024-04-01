@@ -8,6 +8,20 @@ echo "First fruit: $fruit_bucket[0] \n"; //here we used number 0 to grab the fir
 echo "Second fruit: $fruit_bucket[1] \n";
 echo "Third fruit: $fruit_bucket[2] \n";
 
+//adding new item to the array
+
+$fruit_bucket[] = "Pinaple";
+
+echo "Fourth fruit: $fruit_bucket[3] \n"; //so now we can grab the new element too, and a new element is always added to the last position of the array if not defined where to add.
+
+//modifying existing element value
+
+$fruit_bucket[1] = "Coconut";
+
+//the second fruit was "Banana" and we changed it to "Coconut"
+
+echo "Modified Second fruit: $fruit_bucket[1]\n";
+
 
 //nested array (It means array inside an array)
 
@@ -21,7 +35,7 @@ $user_names = [
 //so here is how we can access specific elements of a nested array.
 //suppose I want to grab the last name of the first user
 
-echo "Last name of the second user is: {$user_names[0][1]}"; //to grab nested array element we have to wrap it inside curly braces while embeding inside a string
+echo "Last name of the second user is: {$user_names[0][1]}\n"; //to grab nested array element we have to wrap it inside curly braces while embeding inside a string
 
 //here the first user is positioned in index 0 of the array, so I grabbed the first user with $user_names[0]
 //again the first element is an array itself so $user_names[0] is also an array
@@ -32,6 +46,8 @@ echo "Last name of the second user is: {$user_names[0][1]}"; //to grab nested ar
 
 
 //Isn't it hard to remember the index position of datas? The answer is yes. So her is the solution.
+
+//Associative Array (It means elements of the array is associated with a specific kye name)
 
 $user_names = [
     ["first_name" => "Sadman Sakib", "last_name" => "Jisan"], // now here each element has its own key and value, so we can access the element with its key name instead of its index position
