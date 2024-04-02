@@ -26,3 +26,9 @@ if($age < 12) { //this block will execute if and only if the expression inside i
 } else { //this block will execute if and only if the expressions inside all of the previous if and elseif conditions are false
     echo "You are old as hell. Just joking, hell is not that old as you. LOL";
 }
+
+
+// ternary operator
+
+echo ($age < 18) ? "Ohho! Kiddo...." : "Hello, big brooo...."; // terinary operator checks a expression and if its true then the part after ? sign will be executed else the part after : will be executed
+
