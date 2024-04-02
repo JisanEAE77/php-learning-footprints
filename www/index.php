@@ -1,3 +1,5 @@
+<? require "router/router.php" ?>
+
 <!DOCTYPE html>
 <html lang="en" class="h-full bg-gray-100">
 <head>
@@ -10,9 +12,9 @@
 
 <div class="min-h-full">
 
-<? include_once "controller/components/navbar.php"; ?> 
+<? include_once "controller/components/navbar.php" ?> 
 
-<? require "router/router.php"; ?> 
+<? require $path ?> 
 
 
 </div>
