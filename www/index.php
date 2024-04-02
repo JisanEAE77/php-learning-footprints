@@ -1,5 +1,8 @@
 <? require "router/router.php" ?>
+<?php
+    require "database/db.php"
 
+?>
 <!DOCTYPE html>
 <html lang="en" class="h-full bg-gray-100">
 <head>
